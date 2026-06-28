@@ -11,12 +11,12 @@ const iconColors: Record<string, string> = {
 };
 
 function coloredIconsPlugin() {
-  function replaceIcon(node: { icon?: string | React.ReactNode }) {
+  function replaceIcon(node: any) {
     if (node.icon === undefined || typeof node.icon === 'string') {
       const name = node.icon as string | undefined;
       const Icon = name ? icons[name as keyof typeof icons] : undefined;
       if (Icon) {
-        const color = iconColors[name];
+        const color = name ? iconColors[name] : undefined;
         node.icon = createElement(
           'span',
           color ? { style: { color, display: 'inline-flex' } } : undefined,
@@ -33,7 +33,7 @@ function coloredIconsPlugin() {
       folder: replaceIcon,
       separator: replaceIcon,
     },
-  };
+  } as any;
 }
 
 // See https://fumadocs.dev/docs/headless/source-api for more info
