@@ -7,7 +7,7 @@ export function baseOptions(): BaseLayoutProps {
       title: (
         <Image
           src="https://intereco.cn-nb1.rains3.com/basic/logo.png"
-          alt="Intereco Docs"
+          alt="界面生态文档"
           width={120}
           height={32}
           style={{ width: 'auto', height: '32px' }}
