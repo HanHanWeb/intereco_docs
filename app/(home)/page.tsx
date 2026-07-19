@@ -13,7 +13,7 @@ export default function HomePage() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight max-w-3xl mb-8">
           界面生态是国内<FloatingText />
           <br />
-          PPTOS 创意社区
+          PPT OS 创意社区
         </h1>
 
         {/* 按钮区域 */}
@@ -64,7 +64,7 @@ export default function HomePage() {
               </svg>
             }
             title="IPOA 赛事文档"
-            description="界面生态 PPTOS 创意设计大赛指南，涵盖赛制、评分与报名全攻略。"
+            description="界面生态 PPT OS 创意设计大赛指南，涵盖赛制、评分与报名全攻略。"
             href="/docs/ipoa"
           />
         </div>
