@@ -66,10 +66,40 @@ th, td {
 th {
   background-color: #f9fafb;
   font-weight: 600;
+  color: #111827;
 }
 
 tr:hover {
   background-color: #f3f4f6;
+}
+
+/* 暗色模式表格样式 */
+@media (prefers-color-scheme: dark) {
+  th, td {
+    border-bottom-color: #374151;
+  }
+
+  th {
+    background-color: #1f2937;
+    color: #f9fafb;
+  }
+
+  tr:hover {
+    background-color: #374151;
+  }
+}
+
+.dark th, .dark td {
+  border-bottom-color: #374151;
+}
+
+.dark th {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.dark tr:hover {
+  background-color: #374151;
 }
 
 /* Banner 彩虹流动动画 */
