@@ -5,8 +5,8 @@ import { icons } from 'lucide-react';
 import { docsContentRoute, docsImageRoute, docsRoute } from './shared';
 
 const iconColors: Record<string, string> = {
-  Users: '#49bdff',
-  Trophy: '#49bdff',
+  Users: '#35b7ff',
+  Trophy: '#35b7ff',
   Award: '#fbbf24',
 };
 

@@ -24,20 +24,20 @@ export function FeatureCard({
           : 'bg-white/60 dark:bg-zinc-800/60'
       } ${
         hovered
-          ? 'shadow-[inset_0_0_0_1.5px_#49bdff,0_2px_8px_rgba(0,0,0,0.06)]'
+          ? 'shadow-[inset_0_0_0_1.5px_#35b7ff,0_2px_8px_rgba(0,0,0,0.06)]'
           : 'shadow-[0_1px_3px_rgba(0,0,0,0.04)]'
       }`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#49bdff]/10 text-[#49bdff] mb-4">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#35b7ff]/10 text-[#35b7ff] mb-4">
         {icon}
       </div>
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <h3 className="text-lg font-medium mb-2">{title}</h3>
       <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-1">{description}</p>
       <Link
         href={href}
-        className="text-sm font-medium text-[#49bdff] hover:text-[#3aa8e8] inline-flex items-center gap-1"
+        className="text-sm font-medium text-[#35b7ff] hover:text-[#29a3e8] inline-flex items-center gap-1"
       >
         浏览文档
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

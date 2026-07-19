@@ -5,12 +5,13 @@ import { FloatingText } from './animated-title';
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-[750px] overflow-hidden mx-auto w-full max-w-[1600px] rounded-[2rem]">
+    <>
+      <div className="relative min-h-[750px] overflow-hidden mx-auto w-full max-w-[1600px] rounded-[2rem]">
       <HeroBackground />
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[750px] px-4 py-20 md:px-12">
         {/* 标题区域 */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight max-w-3xl mb-8">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-center leading-tight max-w-3xl mb-8">
           界面生态是国内<FloatingText />
           <br />
           PPT OS 创意社区
@@ -20,7 +21,7 @@ export default function HomePage() {
         <div className="flex flex-row items-center justify-center gap-4 mb-16">
           <Link
             href="/docs/community"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-colors bg-[#49bdff] text-white dark:text-black hover:bg-[#3aa8e8]"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-colors bg-[#35b7ff] text-white dark:text-black hover:bg-[#29a3e8]"
           >
             从此开始
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -28,10 +29,12 @@ export default function HomePage() {
             </svg>
           </Link>
           <Link
-            href="/docs/community"
+            href="https://www.intereco.org.cn/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 rounded-full font-medium transition-colors border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 bg-white/80 dark:bg-zinc-800/80 hover:bg-white dark:hover:bg-zinc-700"
           >
-            产品官网
+            社区
           </Link>
         </div>
 
@@ -70,5 +73,10 @@ export default function HomePage() {
         </div>
       </div>
     </div>
+
+    <footer className="text-center text-sm text-gray-400 py-8">
+      © {new Date().getFullYear()} 界面生态. All rights reserved.
+    </footer>
+  </>
   );
 }

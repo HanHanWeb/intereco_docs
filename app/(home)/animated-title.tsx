@@ -15,7 +15,7 @@ export function FloatingText() {
   }, []);
 
   return (
-    <span className="text-[#49bdff] font-bold inline-grid" style={{ gridTemplateAreas: '"word"' }}>
+    <span className="text-[#35b7ff] font-medium inline-grid" style={{ gridTemplateAreas: '"word"' }}>
       {words.map((word, i) => (
         <span
           key={word}

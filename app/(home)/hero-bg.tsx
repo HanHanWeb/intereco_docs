@@ -20,7 +20,7 @@ export function HeroBackground() {
       {show && (
         <GrainGradient
           className="absolute inset-0 animate-fd-fade-in duration-800"
-          colors={['#c4edff', '#58c7ff', '#58c7ff20']}
+          colors={['#c4edff', '#58c7ff', '#ace1fb']}
           colorBack="#00000000"
           softness={1}
           intensity={0.9}
