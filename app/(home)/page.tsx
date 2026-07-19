@@ -65,7 +65,7 @@ export default function HomePage() {
             }
             title="IPOA 赛事文档"
             description="界面生态 PPTOS 创意设计大赛指南，涵盖赛制、评分与报名全攻略。"
-            href="/docs/ipoa-contest"
+            href="/docs/ipoa"
           />
         </div>
       </div>
